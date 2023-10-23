@@ -1,0 +1,120 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, .container, footer{
+    color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+h1, h2, h3, footer{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h1{
+    height: 10vh;
+    background: #ffc400;
+}
+
+h2{
+    height: 20vh;
+    background: #ff8d00;
+}
+
+.container{
+    height: 50vh;
+    background: #007c00;
+}
+
+.blocs{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #007c00;
+}
+div{
+    height: 10vh;
+    width: 95vw;
+    background: #fafafa;
+}
+
+.deux{
+    height: 20vh;
+    margin: 1vh 0;
+}
+h3{
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+}
+
+footer{
+    height: 20vh;
+    text-align: center;
+    background: #3e4d91;
+}
+
+@media screen and (min-width: 480px){
+    div{
+        width: 85vw;
+        height: 5vh;
+    }
+    .container{
+        height: 45vh;
+    }
+    .deux{
+        height: 15vh;
+        margin: 2vh 0;
+    }
+    h1{
+        height: 15vh;
+    }
+    h2{
+        height: 20vh;
+    }
+}
+@media screen and (min-width: 760px) {
+    h2{
+        width: 40vw;
+        height: 25vh;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 15vh;
+        border-bottom: 30px solid #007c00;
+        border-right: 30px solid #007c00;
+    }
+    .container{
+        position: relative;
+        z-index: 0;
+        height: 65vh;
+        justify-content: flex-start;
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 0 300px;
+    }
+    .deux{
+        height: 5vh;
+    }
+    .un{
+        height: 20vh;
+    }
+
+}
